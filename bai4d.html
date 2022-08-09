@@ -12,12 +12,8 @@
 <script>
   function tinhtoan() {
     let a = +document.getElementById("Nhapvao").value
-    if (1900<a && a<2000) {
-      document.getElementById("ketqua").innerHTML= "The ky 20"
+      b= ((a-(a%100))/100) +1
+    document.getElementById("ketqua").innerHTML= b
     }
-    if (2000<=a && a<2100) {
-    document.getElementById("ketqua").innerHTML= "the ky 21"
-    }
-  }
 </script>
 </html>
