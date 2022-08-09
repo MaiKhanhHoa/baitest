@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h3>Nhap a</h3><input id="nhapa">
+<h3>Nhap b</h3><input id="nhapb">
+<h3>Nhap c</h3><input id="nhapc">
+<br> <br>
+<button type="button" onclick="tinhtoan()">Kết quả</button>
+<p id="hienthi">Kết quả là:</p>
+</body>
+<script>
+  function tinhtoan() {
+    let a= +document.getElementById("nhapa").value
+    let b= +document.getElementById("nhapb").value
+    let c= +document.getElementById("nhapc").value
+    if (a>0 && b>0 && c>0) {
+      if (a==b && b==c) {
+        document.getElementById("hienthi").innerHTML= (""+a+" va "+b+" va "+c+" la canh cua mot tam giac deu")
+      }
+      else {
+        document.getElementById("hienthi").innerHTML= (""+a+" va "+b+" va "+c+" khong la canh cua mot tam giac deu")
+      }
+    }
+    else {
+      document.getElementById("hienthi").innerHTML= (""+a+" va "+b+" va "+c+" khong la canh cua mot tam giac deu")
+    }
+  }
+</script>
+</html>

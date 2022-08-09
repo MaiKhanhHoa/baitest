@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>Nhap a</h3><input id="nhapa">
+    <h3>Nhap b</h3><input id="nhapb"> <br> <br>
+    <button type="button" onclick="tinhtoan()">Kết quả</button>
+    <p id="hienthi">Kết quả là:</p>
+</body>
+<script>
+  function tinhtoan() {
+    let a= document.getElementById("nhapa").value
+    let b= document.getElementById("nhapb").value
+    x= a*a
+    y= Math.pow(a, b)
+    document.getElementById("hienthi").innerHTML= x + '<br>' + y
+  }
+</script>
+</html>

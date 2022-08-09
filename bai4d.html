@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="Nhapvao">
+    <button type="button" onclick="tinhtoan()">Kết quả</button>
+    <p id="ketqua">Kết quả</p>
+</body>
+<script>
+  function tinhtoan() {
+    let a = +document.getElementById("Nhapvao").value
+    if (1900<a && a<2000) {
+      document.getElementById("ketqua").innerHTML= "The ky 20"
+    }
+    if (2000<=a && a<2100) {
+    document.getElementById("ketqua").innerHTML= "the ky 21"
+    }
+  }
+</script>
+</html>
